@@ -83,25 +83,31 @@ function renderCartItems(){
                 ).toLocaleString()}
             </td>
 
-            <td>
+<td>
 
-                <button
-                    class="quantity-btn"
-                    onclick="decreaseQuantity('${item.id}')"
-                >
-                    -
-                </button>
+    <div class="quantity-control">
 
-                ${item.quantity}
+        <button
+            class="quantity-btn"
+            onclick="decreaseQuantity('${item.id}')"
+        >
+            -
+        </button>
 
-                <button
-                    class="quantity-btn"
-                    onclick="increaseQuantity('${item.id}')"
-                >
-                    +
-                </button>
+        <span class="quantity-value">
+            ${item.quantity}
+        </span>
 
-            </td>
+        <button
+            class="quantity-btn"
+            onclick="increaseQuantity('${item.id}')"
+        >
+            +
+        </button>
+
+    </div>
+
+</td>
 
             <td>
 
