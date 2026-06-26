@@ -503,3 +503,21 @@ img {
     margin-bottom:.5rem;
 
 }
+
+.success-message{
+
+    text-align:center;
+
+    margin-bottom:2rem;
+
+    font-size:2rem;
+
+    font-weight:bold;
+
+}
+
+.customer-name{
+
+    color:var(--orange);
+
+}

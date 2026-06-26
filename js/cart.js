@@ -192,7 +192,14 @@ function renderSummary(){
     document.getElementById(
         "summary-details"
     );
+  const customerName = document.getElementById(
+    "customer-name"
+).value.trim();
 
+document.getElementById(
+    "success-message"
+).innerHTML =
+`Thank You, <span class="customer-name">${customerName}</span>, Your Order Has Been Received`;
     summary.innerHTML = "";
 
     cart.forEach(item => {
